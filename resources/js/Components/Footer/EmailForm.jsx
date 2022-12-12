@@ -1,41 +1,46 @@
 import React, { Component } from 'react';
+import Swal from 'sweetalert2'
 import axios from "axios";
 class EmailForm extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
-            email : '',
+            email: '',
         }
         this.takeEmail = this.takeEmail.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-    takeEmail(event){
-        this.setState({email : event.target.value})
+    takeEmail(event) {
+        this.setState({ email: event.target.value })
     }
-     handleSubmit(){
+    handleSubmit() {
         const packets = {
             email: this.state.email,
         };
-        axios.post('/Madrasa/newsletter', packets)
-            .then(
-                response => alert(JSON.stringify("Form Submited"))
-                )
+        axios.post('/newsletter', packets, { withCredentials: true })
+            .then((response) => {
+                Swal.fire(
+                    'Form Submited',
+                    'Form Submited Success',
+                    'success'
+                ).then(() => {
+                    window.location.href = "/"
+                })
+            })
             .catch(error => {
-                console.log("ERROR:: ",error.response.data);
-                });
+                console.log("ERROR:: ", error.response.data);
+            });
     }
-    render(){
+    render() {
         return (
-<div>
-                    <form >
-                           <div className="input-div pass">
-                              <div className="div">
-                                   <input type="email" placeholder="Email" onChange={this.takeEmail} />
-                           </div>
-                        </div>
-                        <button   className='sign-up' onClick={this.handleSubmit}>Send</button>
-                    </form>
+            <div>
+                <div className="input-div pass">
+                    <div className="div">
+                        <input type="email" placeholder="Email" onChange={this.takeEmail} />
+                    </div>
                 </div>
+                <button className='sign-up' onClick={this.handleSubmit}>Send</button>
+            </div>
         );
     }
 }

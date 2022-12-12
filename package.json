@@ -38,6 +38,7 @@
         "react-reveal": "^1.2.2",
         "react-slick": "^0.29.0",
         "slick-carousel": "^1.8.1",
-        "sweetalert": "^2.1.2"
+        "sweetalert": "^2.1.2",
+        "sweetalert2": "^11.6.15"
     }
 }

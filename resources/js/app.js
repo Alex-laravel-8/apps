@@ -1,6 +1,7 @@
 import React from 'react';
  import ReactDOM from 'react-dom';
  import { PropTypes } from "prop-types";
+import './App.scss';
 import './index.scss';
 // import reportWebVitals from './reportWebVitals';
 import Cards from '../../resources/js/Components/Cards/Cards.jsx';

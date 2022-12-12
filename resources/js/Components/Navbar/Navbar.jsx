@@ -72,41 +72,31 @@ const Navbar = () => {
         </Fade>
         <div className="nav">
 
-          <div className="mobile_icon" to="/Home">
-            {/* <img src={home} alt="" /> */}
+          <a href='#home' className="mobile_icon" to="/Home">
             <AiOutlineHome className="icon" />
             <div>Home</div>
-          </div>
-          <div className="mobile_icon" to="/Home">
-            {/* <img src={about} alt="" /> */}
+          </a>
+          <a href='#about' className="mobile_icon" to="/Home">
             <GiInfo className="icon" />
-
             <div style={{ marginTop: "-10px" }}>About </div>
-          </div>
-          <div className="mobile_icon" to="/Home">
-            {/* <img src={services} alt="" /> */}
+          </a>
+          <a href='#services' className="mobile_icon" to="/Home">
             <BsGear className="icon" />
-
             <div style={{ marginTop: "-10px" }}>Services</div>
-          </div>
-          <div className="mobile_icon" to="/Home">
-            {/* <img src={quran} alt="" /> */}
+          </a>
+          <a href='#subscribe' className="mobile_icon" to="/Home">
             <AiOutlineBell className="icon" />
 
             <div style={{ marginTop: "-10px" }}>Suscribe</div>
-          </div>
-          <div className="mobile_icon" to="/Home">
-            {/* <img src={mosque} alt="" /> */}
+          </a>
+          <a href='#team' className="mobile_icon" to="/Home">
             <AiOutlineTeam className="icon" />
-
             <div>Team</div>
-          </div>
-          <div className="mobile_icon" to="/Home">
-            {/* <img src={contact} alt="" /> */}
+          </a>
+          <a href='#contact' className="mobile_icon" to="/Home">
             <BsTelephone className="icon" />
-
             <div>Contact</div>
-          </div>
+          </a>
 
         </div>
       </div>

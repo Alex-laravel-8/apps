@@ -82,6 +82,7 @@ const HomeSlider = () => {
                 </div>
                 <h5>{data.heading}</h5>
               </div>
+              <div id="about"></div>
             </Fade>
           );
         })}

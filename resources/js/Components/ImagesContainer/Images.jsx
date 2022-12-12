@@ -24,7 +24,7 @@ const Images = () => {
         </div>
         <ImageCard />
 
-        <div className="Image-container"  id='services'>
+        <div className="Image-container" >
           <div className="flex-card">
             <Flip top>
               <div className="image-card">
@@ -88,6 +88,7 @@ const Images = () => {
               </div>
             </Flip>
           </div>
+          <div id='subscribe'></div>
         </div>
       </div>
     </>

@@ -51,9 +51,11 @@ const ImageCard = () => {
                         <span> As Muslims, our goal should be to spread Allah's final word worldwide.</span>
                     </div>
                 </div>
+
                 </Roll>
             </div>
 
+            <div id='services'></div>
 
         </div>
     )

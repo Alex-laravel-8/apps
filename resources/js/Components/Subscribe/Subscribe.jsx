@@ -7,7 +7,7 @@ import EmailForm from './EmailForm';
 
 const Subscribe = () => {
     return (
-        <div className='subscribe-container' id='subscribe'>
+        <div className='subscribe-container' >
             <div className="left-container">
                 <img src={sub} alt="" />
             </div>
